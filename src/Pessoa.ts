@@ -30,6 +30,14 @@ class Pessoa {
         this.cpf = _cpf;
     }
 
+    public getEmail(): string {
+        return this.email;
+    }
+
+    public setEmail(_email: string): void {
+        this.email = _email;
+    }
+
     public apresentar(): void {
         console.log(`Olá, meu nome é ${this.nome}!`);
     }

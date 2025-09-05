@@ -1,5 +1,8 @@
 import Pessoa from "./Pessoa.js";
 
+/**
+ * Classe Aluno herda de Pessoa
+ */
 class Aluno extends Pessoa {
     // atributos
     private matricula: number;
@@ -15,14 +18,25 @@ class Aluno extends Pessoa {
         this.matricula = _matricula;
     }
 
+    /**
+     * Retorna a matricula do aluno
+     * @returns Matricula do aluno
+     */
     public getMatricula(): number {
         return this.matricula;
     }
 
+    /**
+     * Atribui a matricula ao aluno
+     * @param _matricula 
+     */
     public setMatricula(_matricula: number): void {
         this.matricula = _matricula;
     }
 
+    /**
+     * Exibe a mensagem do usuário estudando
+     */
     public estudar(): void {
         console.log(`O aluno ${this.getNome()} está estudando!`);
     }

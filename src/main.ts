@@ -1,3 +1,4 @@
+// importando as classes para podermos usar no arquivo
 import Aluno from "./Aluno.js";
 import Professor from "./Professor.js";
 
@@ -17,6 +18,7 @@ let a1: Aluno = new Aluno(
     34454889
 );
 
+// instanciando aluno
 let a2: Aluno = new Aluno(
     "Kevin Leandro Nascimento",
     86795767272,
@@ -24,11 +26,11 @@ let a2: Aluno = new Aluno(
     1785648
 );
 
-prof.apresentar();
-prof.darAula();
+prof.apresentar(); // chamando método apresentar do objeto professor
+prof.darAula(); // chamando método darAula do objeto professor
 
-a1.apresentar();
-a1.estudar();
+a1.apresentar();  // chamando método apresentar do objeto aluno
+a1.estudar();   // chamando método estudar do objeto aluno
 
-a2.apresentar();
-a2.estudar();
+a2.apresentar();  // chamando método apresentar do objeto aluno
+a2.estudar();  // chamando método estudar do objeto aluno
